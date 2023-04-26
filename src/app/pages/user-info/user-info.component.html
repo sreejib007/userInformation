@@ -1,0 +1,6 @@
+
+<div class="user-info" *ngIf="usersInfo">
+    <ng-container *ngFor="let user of usersInfo | userSearch : searchText">
+        <div><app-user-card [user]="user"></app-user-card></div>
+    </ng-container>  
+</div>

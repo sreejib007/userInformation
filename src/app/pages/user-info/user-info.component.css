@@ -1,0 +1,12 @@
+
+.user-info {
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .user-info > div {
+    flex: 1 0 50%;
+    padding: 10px;
+    box-sizing: border-box;
+  }

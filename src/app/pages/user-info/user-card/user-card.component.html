@@ -1,0 +1,13 @@
+<div class="card">
+    <div class="container" *ngIf="cardData">
+        <h4><span>Name: </span><span>{{cardData.name}}</span></h4>
+        <p><span>User Name: </span><span>{{cardData.username}}</span></p>
+        <p><span>Email: </span><span>{{cardData.email}}</span></p>
+        <p><span>Company: </span><span>{{cardData.company?.name}}</span></p>
+        <p><span>Phone Number: </span><span>{{cardData.phone}}</span></p>
+        <div>
+            <h4 class="title-addr">Address: </h4>
+            <div [innerHTML]="cardData.address" class="address"></div>
+        </div>
+    </div>
+</div>

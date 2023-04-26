@@ -1,0 +1,47 @@
+.header {
+  overflow: hidden;
+  background-color: #4b06f9;
+  padding: 10px 10px;
+}
+
+.header span {
+  float: left;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+  padding: 12px;
+}
+
+.header span.active {
+  background-color: rgb(30, 255, 203);
+  color: white;
+}
+
+.header span.date{
+    float: right;
+}
+
+.header input[type=text] {
+  float: left;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+  margin-left: 40px;
+}
+
+@media screen and (max-width: 500px) {
+  .header span {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .header input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}

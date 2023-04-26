@@ -1,0 +1,9 @@
+<div class="header">
+    <div>
+        <span routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" routerLink="/">User Information</span>
+        <span routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" routerLink="/aboutus">About Us</span>
+        <span routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" routerLink="/contact">Contact</span>
+        <input type="text" placeholder="Search User by username.." [(ngModel)] = "searchText" (keyup)="search()">
+        <span class="date">{{currentDate |date:'dd-MMMM-yyyy'}}</span>
+    </div>
+</div>
